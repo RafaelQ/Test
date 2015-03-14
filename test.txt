@@ -1,0 +1,7 @@
+  if(IsPostBack){
+ SqlConnection Connect = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringQueue"].ConnectionString);
+
+ string getName = "select count(*) from UserData where ='" +TextBoxName.Text+ "' ";
+                SqlCommand assing = new SqlCommand(getName,Connect); //insert string from 
+
+}
